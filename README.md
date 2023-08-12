@@ -1,12 +1,12 @@
 Bare template for Harold
 
-Use it with [create-harold-app](https://github.com/juliancwirko/create-harold-app)
+Use it with [create-harold-app](https://github.com/harold-js/create-harold-app)
 
 ```
-npm init harold-app my-app -t bare
+npm init harold-app@latest my-app -t bare
 ```
 
 with npm 7+
 ```
-npm init harold-app my-app -- -t bare
+npm init harold-app@latest my-app -- -t bare
 ```
