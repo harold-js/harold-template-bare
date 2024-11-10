@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "variables";
+
+.button {
+  color: variables.$color-main-dark;
+  display: inline-block;
+  border: 1px solid variables.$color-main-dark;
+  transition: background-color .2s;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 400;
+  background-color: variables.$color-main-dark;
+  color: variables.$color-main-light;
+
+  &:hover {
+    background-color: color.adjust(variables.$color-main-dark, $lightness: -50%);
+  }
+}

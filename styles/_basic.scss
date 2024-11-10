@@ -1,16 +1,19 @@
+@use "sass:color";
+@use "variables";
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: $font-family-main;
+  font-family: variables.$font-family-main;
   font-weight: 300;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 30px;
-  color: $color-main-dark;
+  color: variables.$color-main-dark;
 }
 
 article, aside, footer, header, nav, section {
@@ -54,7 +57,7 @@ article, aside, footer, header, nav, section {
   }
 
   &:hover  {
-    border-bottom: 3px solid $color-main-dark;   
+    border-bottom: 3px solid variables.$color-main-dark;   
   }
 }
 
@@ -73,7 +76,7 @@ article, aside, footer, header, nav, section {
 .main-logo-dot {
   width: 15px;
   height: 15px;
-  background-color: $color-main-contrast;
+  background-color: variables.$color-main-contrast;
   margin-right: 10px;
   margin-bottom: 2px;
 }
@@ -89,35 +92,17 @@ article, aside, footer, header, nav, section {
   padding: 60px 30px 30px;
   text-align: center;
   font-size: 13px;
-  color: rgba($color-main-dark, .4);
-  height: $size-footer-height;
+  color: rgba(variables.$color-main-dark, .4);
+  height: variables.$size-footer-height;
 
   a {
-    color: $color-main-contrast;
+    color: variables.$color-main-contrast;
   }
 }
 
 .page-container,
 .post-container {
-  min-height: calc(100vh - #{$size-header-height} - #{$size-footer-height});
-}
-
-.button {
-  color: $color-main-dark;
-  display: inline-block;
-  border: 1px solid $color-main-dark;
-  transition: background-color .2s;
-  text-decoration: none;
-  padding: 5px 20px;
-  border-radius: 3px;
-  text-align: center;
-  font-weight: 400;
-  background-color: $color-main-dark;
-  color: $color-main-light;
-
-  &:hover {
-    background-color: darken($color-main-dark, 50%);
-  }
+  min-height: calc(100vh - #{variables.$size-header-height} - #{variables.$size-footer-height});
 }
 
 .home-see-all-posts {
